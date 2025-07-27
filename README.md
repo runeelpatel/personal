@@ -8,6 +8,12 @@ This is a modern, responsive personal website built with simple HTML, Tailwind C
 - Profile image and personal info from `profile.md`
 - Project highlights, skills, and contact info
 
+## Updates
+- The navigation bar now includes: HOME, ABOUT, PORTFOLIO, CONTACT.
+- Removed the 'Other' nav item and deleted other.html.
+- Added dedicated pages: about.html, portfolio.html, and contact.html, each with a consistent theme.
+- contact.html includes a simple contact form (name, email, message).
+
 ## Setup & Usage
 1. **Clone or copy this repository.**
 2. Ensure the following structure:
