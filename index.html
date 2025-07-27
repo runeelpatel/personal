@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rudroneel Patel | Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/jpeg" href="assets/profile.jpg">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f8f9fa] min-h-screen text-gray-900 font-sans">
+    <!-- Navbar -->
+    <nav class="w-full bg-white shadow-sm py-4 px-8 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-6 h-6 bg-gradient-to-tr from-blue-400 to-indigo-500 rounded-md mr-2"></span>
+        <span class="font-bold text-xl tracking-tight">Personal</span>
+      </div>
+      <ul class="flex gap-8 text-sm font-semibold">
+        <li><a href="#" class="text-blue-500">HOME</a></li>
+        <li><a href="#about" class="hover:text-blue-500 transition">ABOUT</a></li>
+        <li><a href="#services" class="hover:text-blue-500 transition">SERVICES</a></li>
+        <li><a href="#portfolio" class="hover:text-blue-500 transition">PORTFOLIO</a></li>
+        <li><a href="#pricing" class="hover:text-blue-500 transition">PRICING</a></li>
+        <li><a href="#blog" class="hover:text-blue-500 transition">BLOG</a></li>
+        <li><a href="#pages" class="hover:text-blue-500 transition">PAGES</a></li>
+        <li><a href="#contact" class="hover:text-blue-500 transition">CONTACT</a></li>
+      </ul>
+    </nav>
+    <!-- Hero Section -->
+    <main class="flex flex-col items-center justify-center min-h-[70vh] px-4 bg-[#f8f9fa]">
+      <div class="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-8 py-16">
+        <!-- Left: Text -->
+        <div class="flex-1 flex flex-col items-start justify-center">
+          <span class="uppercase text-xs tracking-widest text-gray-500 mb-2">This is me</span>
+          <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-gray-900">RUDRONEEL PATEL</h1>
+          <p class="text-gray-500 text-lg mb-6 max-w-lg">I'm currently studying BSc Games Technology at the University of Portsmouth, with a keen interest in Artificial Intelligence and its real-world applications across data science, finance, and the gaming industry.</p>
+          <a href="#about" class="inline-block px-6 py-3 rounded bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold shadow hover:from-indigo-500 hover:to-blue-500 transition">DISCOVER NOW</a>
+        </div>
+        <!-- Right: Profile Image -->
+        <div class="flex-1 flex items-center justify-center">
+          <div class="relative">
+            <div class="absolute -inset-4 rounded-2xl border-4 border-transparent bg-gradient-to-tr from-blue-400 to-indigo-500 z-0"></div>
+            <img src="assets/profile.jpg" alt="Rudroneel Patel" class="relative z-10 w-80 h-80 object-cover rounded-2xl shadow-xl border-8 border-white" />
+            <div class="absolute top-4 left-4 w-72 h-72 rounded-2xl bg-blue-100 opacity-30 z-0" style="filter: blur(8px);"></div>
+          </div>
+        </div>
+      </div>
+      <!-- About Section (below hero) -->
+      <section id="about" class="w-full max-w-4xl bg-white rounded-2xl shadow p-8 mt-8 flex flex-col md:flex-row gap-8 items-center">
+        <img src="assets/profile.jpg" alt="Rudroneel Patel" class="w-32 h-32 rounded-full border-4 border-blue-400 shadow-md object-cover" />
+        <div>
+          <h2 class="text-2xl font-bold mb-2 text-gray-900">About Me</h2>
+          <p class="text-gray-600 mb-2">I'm a passionate tech enthusiast on a journey to explore the frontiers of AI and Game Development. At the University of Portsmouth, I'm diving deep into topics like programming, real-time rendering, and interactive simulations — while also venturing beyond into machine learning, data visualization, and quantitative analysis.</p>
+          <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Artificial Intelligence & Machine Learning</li>
+            <li>Game Design & Development</li>
+            <li>Financial Modeling</li>
+            <li>Data Analytics & Visualization</li>
+            <li>Procedural Generation & Simulation</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script>
+      // Simple fade-in animation
+      document.querySelector('main').classList.add('opacity-0');
+      window.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+          document.querySelector('main').classList.remove('opacity-0');
+          document.querySelector('main').classList.add('transition-opacity', 'duration-1000', 'opacity-100');
+        }, 100);
+      });
+    </script>
+  </body>
+</html> 

@@ -1,0 +1,3 @@
+- Created a modern personal website using HTML, Tailwind CSS (CDN), and JavaScript for animation.
+- Used content from profile.md and profile image from assets/profile.jpg.
+- Added README.md with setup and usage instructions. 
